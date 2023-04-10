@@ -268,7 +268,9 @@ class DetailWebPage extends StatelessWidget {
                                       ),
                                     ],
                                   ),
-                                  Container(
+                                  // wrapped with Expanded to make it scrollable
+                                  Expanded(
+                                      child: Container(
                                     padding:
                                         EdgeInsets.symmetric(vertical: 16.0),
                                     child: Text(
@@ -276,7 +278,7 @@ class DetailWebPage extends StatelessWidget {
                                       textAlign: TextAlign.justify,
                                       style: TextStyle(fontSize: 16.0),
                                     ),
-                                  ),
+                                  )),
                                 ],
                               ),
                             ),
